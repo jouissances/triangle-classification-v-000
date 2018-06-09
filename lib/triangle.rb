@@ -11,9 +11,7 @@ class Triangle
     if (a > 0 && b > 0 && c > 0 && a + b > c && a + c > b && b + c > a)
       if (a == b && a == c)
         :equilateral
-      elsif (a == b && a != c || a == c && a != b)
-        :isosceles
-      elsif (b == c && b != a)
+      elsif (a == b && a != c || a == c && a != b || b == c && b != a)
         :isosceles
       elsif (a != b && a != c && b != c)
         :scalene
