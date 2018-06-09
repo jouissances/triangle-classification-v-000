@@ -16,11 +16,11 @@ class Triangle
       elsif (a != b && a != c && b != c)
         :scalene
       end
-    elsif (a == 0 || b == 0 || c == 0)
+    else
       begin
         raise TriangleError
       rescue TriangleError => error
-        puts error.message
+        error.message
       end
     end
   end
