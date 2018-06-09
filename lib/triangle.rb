@@ -15,6 +15,8 @@ class Triangle
         :isosceles
       elsif (a == c && a != b)
         :isosceles
+      elsif (b == c && b != a)
+        :isosceles
       elsif (a != b && a != c && b != c)
         :scalene
       end
