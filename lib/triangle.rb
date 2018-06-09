@@ -16,7 +16,7 @@ class Triangle
       elsif (a != b && a != c && b != c)
         :scalene
       end
-    else
+    elsif (a == 0 || b == 0 || c == 0)
       begin
         raise TriangleError
       rescue TriangleError => error
